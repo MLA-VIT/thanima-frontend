@@ -16,12 +16,10 @@
         <ul class="nav">
           <center>
             <li><a href="http://">ABOUT</a></li>
-          <li><a href="http://">CONTESTS</a></li>
-          <li><a href="http://">GALLERY</a></li>
-          <li id="l1"><a href="">LOGIN</a></li>
-
+            <li><a href="http://">CONTESTS</a></li>
+            <li><a href="http://">GALLERY</a></li>
+            <li id="l1"><a href="">LOGIN</a></li>
           </center>
-          
         </ul>
       </div>
       <div class="about">
@@ -46,32 +44,68 @@
     </div>
     <div class="contest">
       <h1>CONTESTS</h1>
-      <img src="assets/card.svg" />
+      <img id="card" src="assets/card.svg" />
       <div class="content" id="content">
         <h2 id="name"></h2>
         <p id="description"></p>
       </div>
       <button id="button2"><a href="">REGISTER </a></button>
-
+      <img id="right" onclick="next()" src="assets/right.svg" />
+      <img id="left" onclick="prev()" src="assets/left.svg" />
     </div>
-    <img src="assets/right.svg">
-      <img src="assets/left.svg">
+
     <script>
-      let currentStoryIndex = 1;
+      let index = 0;
       var content;
       fetch("contest.json")
         .then((response) => response.json())
         .then((parsed) => {
           content = parsed;
-          let storyElement = document.getElementById("content");
+          let contentElement = document.getElementById("content");
           console.log(content);
           if (content.length > 0) {
             console.log("Length greater than 0");
-            storyElement.innerHTML = `<h1 id="name">${content[currentStoryIndex].name}</h1>
-            <p id="description">${content[currentStoryIndex].description}</p>`;
-            console.log(storyElement.innerHTML);
+            contentElement.innerHTML = `<h1 id="name">${content[index].name}</h1>
+            <p id="description">${content[index].description}</p>`;
+            console.log(contentElement.innerHTML);
           }
         });
+
+      function next() {
+        console.log("next");
+        if (content.length - 1 > index) {
+          index += 1;
+        } else {
+          index = 0;
+        }
+        console.log(index);
+        setchange(index);
+      }
+      function prev() {
+        console.log("prev");
+        if (index > 0) {
+          index -= 1;
+        } else {
+          index = content.length - 1;
+        }
+        console.log(index);
+        setchange(index);
+      }
+      function setchange(index) {
+        fetch("contest.json")
+          .then((response) => response.json())
+          .then((parsed) => {
+            content = parsed;
+            let contentElement = document.getElementById("content");
+            console.log(content);
+            if (content.length > 0) {
+              console.log("Length greater than 0");
+              contentElement.innerHTML = `<h1 id="name">${content[index].name}</h1>
+            <p id="description">${content[index].description}</p>`;
+              console.log(contentElement.innerHTML);
+            }
+          });
+      }
     </script>
   </body>
 </html>

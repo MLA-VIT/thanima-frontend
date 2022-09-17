@@ -8,8 +8,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-body{
-    color: white;
+body {
+  color: white;
 }
 #th {
   width: 40vw;
@@ -32,13 +32,13 @@ ul {
 }
 li {
   font-size: 1.9vw;
-  margin-left:3vw;
+  margin-left: 3vw;
   padding-left: 3vw;
   align-items: center;
   display: inline;
 }
-#l1{
-    float:right;
+#l1 {
+  float: right;
 }
 a {
   color: white;
@@ -46,7 +46,7 @@ a {
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
-#button1{
+#button1 {
   box-sizing: border-box;
   color: white;
   height: 4vw;
@@ -58,64 +58,188 @@ a {
   width: 14vw;
   margin-left: 43%;
 }
-#button1:hover{
-    background-color:rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+#button1:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
-#vallam{
-    position: absolute;
-    top:45vw;
-    width: 74vw;
+#vallam {
+  position: absolute;
+  top: 45vw;
+  width: 74vw;
 }
-.about{
-    width: 50%;
-    font-size:1.5vw;
-    padding-top: 5vw;
-    color:white;
-    margin-left:auto;
-    margin-right:auto;
+.about {
+  width: 50%;
+  position: relative;
+  font-size: 1.5vw;
+  padding-top: 5vw;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
-.about h1{
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: normal;
+.about h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
 }
-.contest{
-    position: relative;
-    padding-top:70vw;
+.contest {
+  position: relative;
+  padding-top: 70vw;
 }
-.contest h1{
-    color:white;
-    font-size: 3vw;
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
+.contest h1 {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
-.contest img{
-    padding-top: 0;
-    width: 60vw;
+#card {
+  padding-top: 0;
+  width: 60vw;
 }
-.content{
-    position:absolute;
-    bottom:12vw;
-    width: 34vw;
-    height:30vw;
-    left:32vw;
+.content {
+  position: absolute;
+  bottom: 12vw;
+  width: 34vw;
+  height: 30vw;
+  left: 32vw;
 }
-.content h2{
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 2.5vw;
-
+.content h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5vw;
+}
+.content p{
+  font-size: 1.2vw;
 }
 #button2 {
-    box-sizing: border-box;
-    color: white;
-    height: 4vw;
-    font-size: 1.4vw;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2.78638px solid #ffffff;
-    position: absolute;
-    bottom: 14vw;
-    width: 14vw;
-    margin-left:42vw;
+  box-sizing: border-box;
+  color: white;
+  height: 4vw;
+  font-size: 1.4vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2.78638px solid #ffffff;
+  position: absolute;
+  bottom: 15vw;
+  width: 14vw;
+  margin-left: 42vw;
+}
+#right {
+  position: absolute;
+  right: 0;
+  width:5vw;
+  bottom: 20vw;
+}
+
+#left {
+  position: absolute;
+  left: 0;
+  width:5vw;
+  bottom: 20vw;
+}
+@media screen and (max-width:1024px) and (min-width:200px){
+  body{
+    overflow-x: hidden;
   }
+  .header{
+    overflow: hidden;
+    top:-5.3vw;
+    margin-left:-1vw;
+    width:100vw;
+  }
+  ul{
+
+    padding:0;
+    background-color: rgb(254, 254, 254);
+  }
+  li{
+    margin-left:2vw;
+    padding-bottom: 5vw;
+    font-size: 5vw;
+    height:7vw;
+    display:block;
+    color:black;
+  }
+
+  li a{
+    color:black;
+  }
+  #l1{
+    float:none;
+  }
+  img{
+    padding-top: 50vw;
+  }
+  #th{
+    width:90vw;
+    padding:0;
+    padding-top: 60vw;
+
+
+  }
+  .land{
+    height:190vw;
+  }
+  #button1{
+    width:30vw;
+    height:10vw;
+    bottom:56vw;
+    margin-left: 33vw;
+  }
+  #vallam{
+    display: none;
+  }
+  .about{
+    position:relative;
+    top:50vw;
+    width:80vw;
+  }
+  .about h1{
+    font-size:9vw;
+  }
+  .about p{
+    font-size: 5vw;
+  }
+  .contest{
+    padding-top:180vw;
+    height:120vw;
+  }
+  .contest h1{
+    font-size: 12vw;
+
+  }
+  #card{
+    width:85vw;
+    padding:0;
+  }
+  .content{
+    bottom:56vw;
+    left:20vw;
+    width:60vw;
+    text-align: center;
+  }
+  #name{
+    font-size: 9vw;
+    margin-bottom:0;
+  }
+  #description{
+    font-size:2vw;
+  }
+  #button2{
+    width:20vw;
+    font-size: 3vw;
+    height:8vw;
+    bottom:36vw;
+    margin-left:38vw;
+  }
+  #right{
+    width:10vw;
+    bottom:10vw;
+  }
+  #left{
+    width:10vw;
+    bottom:10vw;
+  }
+  
+  }
+
+
+
