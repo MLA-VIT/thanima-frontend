@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="contest.json"></script>
+    <title>Thanima</title>
+  </head>
+  <body>
+    <div class="land">
+      <img id="th" src="bharatthanima.svg" />
+      <button id="button1"><a href="">REGISTER </a></button>
+      <div class="header">
+        <ul class="nav">
+          <center>
+            <li><a href="http://">ABOUT</a></li>
+          <li><a href="http://">CONTESTS</a></li>
+          <li><a href="http://">GALLERY</a></li>
+          <li id="l1"><a href="">LOGIN</a></li>
+
+          </center>
+          
+        </ul>
+      </div>
+      <div class="about">
+        <h1>ABOUT US</h1>
+
+        <p>
+          Thanima 2k20 Live embodies the spirit of previous Thanima yet puts
+          forth the entirely avant-garde concept of the Event being conducted
+          online. It shall completely shatter the preconceived notions of online
+          events and will set a new standard for such events in the future. All
+          the Events and competitions shall be completely online and will be
+          conducted in a pattern wherein people don’t feel threatened about
+          their safety. All Thanima 2k20 events and competitions shall have
+          rewards and manifest the feeling of recouping ethos of what Onam means
+          to each one of us. Thanima 2k20 Live embodies the spirit of previous
+          Thanima yet puts forth the entirely avant-garde concept of the Event
+          being conducted online. It shall completely shatter the preconceived
+          notions of online events and will set a ne
+        </p>
+      </div>
+      <img id="vallam" src="vallam.svg" />
+    </div>
+    <div class="contest">
+      <h1>CONTESTS</h1>
+      <img src="card.svg" />
+      <div class="content" id="content">
+        <h2 id="name"></h2>
+        <p id="description"></p>
+      </div>
+      <button id="button2"><a href="">REGISTER </a></button>
+
+    </div>
+    <img src="right.svg">
+      <img src="left.svg">
+    <script>
+      let currentStoryIndex = 1;
+      var content;
+      fetch("contest.json")
+        .then((response) => response.json())
+        .then((parsed) => {
+          content = parsed;
+          let storyElement = document.getElementById("content");
+          console.log(content);
+          if (content.length > 0) {
+            console.log("Length greater than 0");
+            storyElement.innerHTML = `<h1 id="name">${content[currentStoryIndex].name}</h1>
+            <p id="description">${content[currentStoryIndex].description}</p>`;
+            console.log(storyElement.innerHTML);
+          }
+        });
+    </script>
+  </body>
+</html>
