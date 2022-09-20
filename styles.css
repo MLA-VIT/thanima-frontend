@@ -1,7 +1,7 @@
 body {
   background-color: black;
 }
-img {
+.pad {
   padding: 9vw;
   position: relative;
   display: block;
@@ -135,6 +135,150 @@ a {
   width:5vw;
   bottom: 20vw;
 }
+
+.gallery
+{
+width: auto;
+font: 19px Arial;
+margin-left: auto;
+margin-right: auto;
+}
+.gallery1 h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+.gallery table, th, td
+{
+  max-width: 400px;
+border: none;
+border-collapse: collapse;
+padding: 3px 4px;
+text-align: center;
+}
+
+.gallery img
+{
+width: 300px;
+}
+
+#button3 {
+  box-sizing: border-box;
+  color: white;
+  height: 4vw;
+  font-size: 1.4vw;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2.78638px solid #ffffff;
+  position: absolute;
+  width: 14vw;
+  margin-left: 42vw;
+}
+
+.sponsors{
+  width: 50%;
+  position: relative;
+  font-size: 1.5vw;
+  padding: 5vw;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sponsors h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+
+}
+
+.diamondspons {
+  width: 100%;
+  margin-right:0;
+}
+
+.sponsors table, th, td
+{
+border: none;
+border-collapse: collapse;
+padding: 2px 2px;
+text-align: center;
+}
+
+.sponsors img{
+  width:60%;
+}
+
+.footer-distributed{
+  border-top: 0.5px solid red;
+
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed .footer-left img{
+  width:50%;
+
+}
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed img {
+  padding: 0;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+  .footer-distributed .footer-right{
+    width: 20%;
+  }
+
+  /* .footer-right p{
+    margin-top: 100px;
+  } */
+  
+
+
+
+
+
 @media screen and (max-width:1024px) and (min-width:200px){
   body{
     overflow-x: hidden;
