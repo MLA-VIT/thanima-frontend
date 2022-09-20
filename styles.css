@@ -1,8 +1,27 @@
 body {
   background-color: black;
+  overflow-x: hidden;
+  
 }
-.pad {
-  padding: 9vw;
+@font-face {
+  font-family: Poppins;
+  src: url("assets/poppins/Poppins-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: Poppins-r;
+  src: url("assets/poppins/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Poppins-l;
+  src: url("assets/poppins/Poppins-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: Inter;
+  src: url("assets/Inter/static/Inter-Medium.ttf") format("opentype");
+}
+
+img {
+  /* padding: 9vw; */
   position: relative;
   display: block;
   margin-left: auto;
@@ -13,6 +32,12 @@ body {
 }
 #th {
   width: 40vw;
+}
+#circles{
+  position: absolute;
+  top:-16vw;
+  left:5vw;
+  width:70vw;
 }
 .land {
   position: relative;
@@ -26,24 +51,27 @@ body {
   width: 99.4%;
 }
 ul {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 li {
-  font-size: 1.9vw;
+  font-size: 1.5vw;
   margin-left: 3vw;
-  padding-left: 3vw;
+  padding-right: 5vw;
   align-items: center;
   display: inline;
 }
-#l1 {
+#log {
+  position: absolute;
+  right: 1vw;
   float: right;
 }
 a {
   color: white;
   text-decoration: none;
-  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-family: Poppins
 }
 
 #button1 {
@@ -64,8 +92,14 @@ a {
 }
 #vallam {
   position: absolute;
-  top: 45vw;
+  top: 59vw;
   width: 74vw;
+}
+#arcs{
+  position: absolute;
+  width:170vw;
+  top:89vw;
+  left: -40vw;
 }
 .about {
   width: 50%;
@@ -78,18 +112,22 @@ a {
 }
 .about h1 {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family:Poppins;
   font-style: normal;
+}
+.about p{
+  font-family:Inter;
+  text-align: center;
 }
 .contest {
   position: relative;
-  padding-top: 70vw;
+  padding-top: 90vw;
 }
 .contest h1 {
   color: white;
   font-size: 3vw;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Poppins;
 }
 #card {
   padding-top: 0;
@@ -97,18 +135,31 @@ a {
 }
 .content {
   position: absolute;
-  bottom: 12vw;
+  bottom: 18vw;
   width: 34vw;
   height: 30vw;
-  left: 32vw;
+  left: 34vw;
 }
 .content h2 {
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.5vw;
+  font-family: Poppins;
+  font-size: 1vw;
+}
+#name{
+  font-size: 1.7vw;
+  
+}
+#description{
+  text-align: left;
+  top:4vw;
+  font-size:1.1vw;
+  position: absolute;
+
 }
 .content p{
+  padding-top: 3vw;
   font-size: 1.2vw;
+
 }
 #button2 {
   box-sizing: border-box;
@@ -159,6 +210,13 @@ text-align: center;
 
 .gallery img
 {
+  padding: 0vw;
+width: 300px;
+}
+
+.sponsors img
+{
+  padding: 0vw;
 width: 300px;
 }
 
@@ -207,104 +265,100 @@ text-align: center;
   width:60%;
 }
 
-.footer-distributed{
-  border-top: 0.5px solid red;
-
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-	padding: 55px 50px;
+footer{
+  height:30vw;
+  position: relative;
 }
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+footer img{
+  width:1vw;
+  padding:4vw;
 }
-
-
-.footer-distributed .footer-left{
-	width: 40%;
+#footer_logo{
+  position: absolute;
+  top: 3vw;
+  width:20vw;
 }
-
-.footer-distributed .footer-left img{
-  width:50%;
+.connect{
+  position: absolute;
+  top:6vw;
+  left: 38vw;
+}
+.connect h1{
+  font-family: Poppins-r;
+  font-size: 1.9vw;
+  text-align: center;
+}
+.connect img{
+  text-align: center;
+  padding:0;
+  padding-right: 2vw;
+  margin:0;
+  width:3vw;
+  display: inline-block;
+}
+#insta{
+  width:2.4vw ;
+  padding-left: 2vw;
+}
+#mail{
+  width:3.5vw;
+}
+.contact{
+  position: absolute;
+  top:6vw;
+  font-family: poppins-r;
+  right:10vw;
+}
+.contact h1{
+  font-size: 1.9vw;
+}
+.contact h2{
+  font-size: 1.5vw;
+}
+.bottom{
+  font-family: poppins-l;
+  font-size: .4vw;
+  position: absolute;
+  bottom:0;
+  color:red;
+  left:35vw;
+  text-align: center;
 
 }
-
-.footer-distributed .footer-center{
-	width: 35%;
+.bottom span{
+  color:white;
 }
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed img {
-  padding: 0;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 55px;
-	height: 55px;
-	cursor: pointer;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-
-  .footer-distributed .footer-right{
-    width: 20%;
-  }
-
-  /* .footer-right p{
-    margin-top: 100px;
-  } */
-  
-
-
-
-
-
 @media screen and (max-width:1024px) and (min-width:200px){
   body{
     overflow-x: hidden;
   }
   .header{
-    overflow: hidden;
     top:-5.3vw;
     margin-left:-1vw;
     width:100vw;
   }
   ul{
-
-    padding:0;
-    background-color: rgb(254, 254, 254);
+    padding-top: 10vw;
+    padding-left: 0;
   }
   li{
-    margin-left:2vw;
     padding-bottom: 5vw;
     font-size: 5vw;
     height:7vw;
-    display:block;
     color:black;
+  }
+  #gal{
+    display: none;
+  }
+  #log{
+    position:relative;
+  }
+  #circles{
+    width:0;
   }
 
   li a{
-    color:black;
+    color:rgb(255, 255, 255);
   }
   #l1{
     float:none;
@@ -326,9 +380,13 @@ text-align: center;
     width:30vw;
     height:10vw;
     bottom:56vw;
+    font-size: 3vw;
     margin-left: 33vw;
   }
   #vallam{
+    display: none;
+  }
+  #arcs{
     display: none;
   }
   .about{
@@ -340,7 +398,7 @@ text-align: center;
     font-size:9vw;
   }
   .about p{
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .contest{
     padding-top:180vw;
@@ -353,34 +411,84 @@ text-align: center;
   #card{
     width:85vw;
     padding:0;
+
+
   }
   .content{
     bottom:56vw;
     left:20vw;
     width:60vw;
+    height:30vw;
     text-align: center;
   }
   #name{
-    font-size: 9vw;
+    font-size: 3vw;
+    position: absolute;
+    text-align:center;
+    width:50vw;
+    top:6vw;
+    left:3vw;
     margin-bottom:0;
   }
   #description{
-    font-size:2vw;
+    position: absolute;
+    top:14vw;
+    font-size:1.9vw;
   }
   #button2{
     width:20vw;
     font-size: 3vw;
     height:8vw;
-    bottom:36vw;
+    bottom:23.5vw;
     margin-left:38vw;
   }
   #right{
     width:10vw;
-    bottom:10vw;
+    bottom:-3vw;
   }
   #left{
     width:10vw;
-    bottom:10vw;
+    bottom:-3vw;
+  }
+  footer{
+    height:60vw;
+  }
+  #footer_logo{
+    width:35vw;
+  }
+  .connect{
+    right:0;
+  }
+  .connect h1{
+    font-size: 3.4vw;
+
+
+  }
+  .connect img{
+    width:5vw;
+  }
+  #insta{
+    width:4.4vw;
+  }
+  #mail{
+    width:5.5vw;
+  }
+  .contact{
+    top:25vw;
+    right:30vw;
+  }
+  .contact h1{
+    text-align: center;
+    font-size: 3vw;
+  }
+  .contact h2{
+    font-size:3vw;
+
+  }
+  .bottom{
+    font-size: 1.3vw;
+    left:17vw;
+    width:60vw;
   }
   
   }
