@@ -1,15 +1,25 @@
 body {
   background-color: black;
   overflow-x: hidden;
+  
 }
 @font-face {
   font-family: Poppins;
   src: url("assets/poppins/Poppins-Medium.otf") format("opentype");
 }
 @font-face {
+  font-family: Poppins-r;
+  src: url("assets/poppins/Poppins-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Poppins-l;
+  src: url("assets/poppins/Poppins-Light.otf") format("opentype");
+}
+@font-face {
   font-family: Inter;
   src: url("assets/Inter/static/Inter-Medium.ttf") format("opentype");
 }
+
 img {
   padding: 9vw;
   position: relative;
@@ -25,9 +35,9 @@ body {
 }
 #circles{
   position: absolute;
-  top:-25vw;
-  left:-5vw;
-  width:90vw;
+  top:-16vw;
+  left:5vw;
+  width:70vw;
 }
 .land {
   position: relative;
@@ -137,9 +147,12 @@ a {
 }
 #name{
   font-size: 1.7vw;
+  
 }
 #description{
-  text-align: center;
+  text-align: left;
+  top:4vw;
+  font-size:1.1vw;
   position: absolute;
 
 }
@@ -173,6 +186,69 @@ a {
   width:5vw;
   bottom: 20vw;
 }
+footer{
+  height:30vw;
+  position: relative;
+}
+footer img{
+  width:1vw;
+  padding:4vw;
+}
+#footer_logo{
+  position: absolute;
+  top: 3vw;
+  width:20vw;
+}
+.connect{
+  position: absolute;
+  top:6vw;
+  left: 38vw;
+}
+.connect h1{
+  font-family: Poppins-r;
+  font-size: 1.9vw;
+  text-align: center;
+}
+.connect img{
+  text-align: center;
+  padding:0;
+  padding-right: 2vw;
+  margin:0;
+  width:3vw;
+  display: inline-block;
+}
+#insta{
+  width:2.4vw ;
+  padding-left: 2vw;
+}
+#mail{
+  width:3.5vw;
+}
+.contact{
+  position: absolute;
+  top:6vw;
+  font-family: poppins-r;
+  right:10vw;
+}
+.contact h1{
+  font-size: 1.9vw;
+}
+.contact h2{
+  font-size: 1.5vw;
+}
+.bottom{
+  font-family: poppins-l;
+  font-size: .4vw;
+  position: absolute;
+  bottom:0;
+  color:red;
+  left:35vw;
+  text-align: center;
+
+}
+.bottom span{
+  color:white;
+}
 @media screen and (max-width:1024px) and (min-width:200px){
   body{
     overflow-x: hidden;
@@ -184,6 +260,7 @@ a {
   }
   ul{
     padding-top: 10vw;
+    padding-left: 0;
   }
   li{
     padding-bottom: 5vw;
@@ -193,6 +270,12 @@ a {
   }
   #gal{
     display: none;
+  }
+  #log{
+    position:relative;
+  }
+  #circles{
+    width:0;
   }
 
   li a{
@@ -249,39 +332,83 @@ a {
   #card{
     width:85vw;
     padding:0;
+
+
   }
   .content{
     bottom:56vw;
     left:20vw;
     width:60vw;
+    height:30vw;
     text-align: center;
   }
   #name{
-    font-size: 5vw;
+    font-size: 3vw;
     position: absolute;
-    top:5vw;
-    left:13vw;
+    text-align:center;
+    width:50vw;
+    top:8vw;
+    left:3vw;
     margin-bottom:0;
   }
   #description{
     position: absolute;
-    top:15vw;
-    font-size:2vw;
+    top:17vw;
+    font-size:2.05vw;
   }
   #button2{
     width:20vw;
     font-size: 3vw;
     height:8vw;
-    bottom:34vw;
+    bottom:23.5vw;
     margin-left:38vw;
   }
   #right{
     width:10vw;
-    bottom:5vw;
+    bottom:-3vw;
   }
   #left{
     width:10vw;
-    bottom:5vw;
+    bottom:-3vw;
+  }
+  footer{
+    height:60vw;
+  }
+  #footer_logo{
+    width:35vw;
+  }
+  .connect{
+    right:0;
+  }
+  .connect h1{
+    font-size: 3.4vw;
+
+
+  }
+  .connect img{
+    width:5vw;
+  }
+  #insta{
+    width:4.4vw;
+  }
+  #mail{
+    width:5.5vw;
+  }
+  .contact{
+    top:25vw;
+    right:30vw;
+  }
+  .contact h1{
+    text-align: center;
+    font-size: 3vw;
+  }
+  .contact h2{
+    font-size:3vw;
+
+  }
+  .bottom{
+    font-size: 1.3vw;
+    left:12vw;
   }
   
   }
