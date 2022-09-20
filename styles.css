@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: Poppins;
@@ -40,6 +41,7 @@ body {
   width: 99.4%;
 }
 ul {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -47,11 +49,13 @@ ul {
 li {
   font-size: 1.5vw;
   margin-left: 3vw;
-  padding-left: 3vw;
+  padding-right: 5vw;
   align-items: center;
   display: inline;
 }
-#l1 {
+#log {
+  position: absolute;
+  right: 1vw;
   float: right;
 }
 a {
@@ -83,7 +87,8 @@ a {
 }
 #arcs{
   position: absolute;
-  top:85vw;
+  width:170vw;
+  top:89vw;
   left: -40vw;
 }
 .about {
@@ -173,22 +178,21 @@ a {
     overflow-x: hidden;
   }
   .header{
-    overflow: hidden;
     top:-5.3vw;
     margin-left:-1vw;
     width:100vw;
   }
   ul{
-
-    padding:0;
+    padding-top: 10vw;
   }
   li{
-    margin-left:2vw;
     padding-bottom: 5vw;
     font-size: 5vw;
     height:7vw;
-    display:block;
     color:black;
+  }
+  #gal{
+    display: none;
   }
 
   li a{
@@ -232,7 +236,7 @@ a {
     font-size:9vw;
   }
   .about p{
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .contest{
     padding-top:180vw;
@@ -253,10 +257,15 @@ a {
     text-align: center;
   }
   #name{
-    font-size: 9vw;
+    font-size: 5vw;
+    position: absolute;
+    top:5vw;
+    left:13vw;
     margin-bottom:0;
   }
   #description{
+    position: absolute;
+    top:15vw;
     font-size:2vw;
   }
   #button2{
