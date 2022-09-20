@@ -347,14 +347,14 @@ footer img{
     position: absolute;
     text-align:center;
     width:50vw;
-    top:8vw;
+    top:6vw;
     left:3vw;
     margin-bottom:0;
   }
   #description{
     position: absolute;
-    top:17vw;
-    font-size:2.05vw;
+    top:14vw;
+    font-size:1.9vw;
   }
   #button2{
     width:20vw;
