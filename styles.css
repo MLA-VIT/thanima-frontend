@@ -101,6 +101,13 @@ a {
   top:89vw;
   left: -40vw;
 }
+#gallerybg{
+  position: absolute;
+  width:1936px;
+  height: 1125px;
+  top:194vw;
+  left: -30vw;
+}
 .about {
   width: 50%;
   position: relative;
