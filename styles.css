@@ -138,11 +138,11 @@ a {
 }
 #card {
   padding-top: 0;
-  width: 60vw;
+  width: 70vw;
 }
 .content {
   position: absolute;
-  bottom: 18vw;
+  bottom: 12vw;
   width: 34vw;
   height: 30vw;
   left: 34vw;
