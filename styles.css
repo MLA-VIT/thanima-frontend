@@ -374,6 +374,7 @@ footer img{
   }
   #circles{
     width:0;
+    display: none;
   }
 
   li a{
