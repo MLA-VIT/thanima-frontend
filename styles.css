@@ -407,6 +407,7 @@ footer img{
     display: none;
   }
   #arcs{
+    width:0;
     display: none;
   }
   #gallerybg{
