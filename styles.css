@@ -98,15 +98,24 @@ a {
 #arcs{
   position: absolute;
   width:170vw;
-  top:89vw;
+  top:95vw;
   left: -40vw;
 }
 #gallerybg{
   position: absolute;
   width:1936px;
-  height: 1125px;
-  top:194vw;
+  height: 1025px;
+  top:185vw;
   left: -30vw;
+}
+#sponsorsbg{
+  position: absolute;
+  width: 1726.67px;
+  height: 889.66px;
+  top: 247vw;
+  right: -18vw;
+  
+
 }
 .about {
   width: 50%;
@@ -149,7 +158,7 @@ a {
 }
 .content h2 {
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 1vw;
 }
 #name{
@@ -157,8 +166,9 @@ a {
   
 }
 #description{
-  text-align: left;
+  text-align: center;
   top:4vw;
+  font-family: 'Poppins', sans-serif;
   font-size:1.1vw;
   position: absolute;
 
@@ -208,11 +218,12 @@ margin-right: auto;
 }
 .gallery table, th, td
 {
-  max-width: 400px;
+max-width: 400px;
 border: none;
 border-collapse: collapse;
 padding: 3px 4px;
 text-align: center;
+overflow-x:auto;
 }
 
 .gallery img
@@ -308,7 +319,8 @@ footer img{
   padding-left: 2vw;
 }
 #mail{
-  width:3.5vw;
+  width:2.5vw;
+  height: 2.5vw;
 }
 .contact{
   position: absolute;
@@ -396,6 +408,9 @@ footer img{
   #arcs{
     display: none;
   }
+  #gallerybg{
+    display: none;
+  }
   .about{
     position:relative;
     top:50vw;
@@ -412,15 +427,16 @@ footer img{
     height:120vw;
   }
   .contest h1{
+  
     font-size: 12vw;
 
   }
   #card{
-    width:85vw;
+    width:100vw;
+  
     padding:0;
-
-
   }
+ 
   .content{
     bottom:56vw;
     left:20vw;
@@ -433,14 +449,14 @@ footer img{
     position: absolute;
     text-align:center;
     width:50vw;
-    top:6vw;
+    top:8vw;
     left:3vw;
     margin-bottom:0;
   }
   #description{
     position: absolute;
     top:14vw;
-    font-size:1.9vw;
+    font-size:1.8vw;
   }
   #button2{
     width:20vw;
@@ -450,13 +466,33 @@ footer img{
     margin-left:38vw;
   }
   #right{
-    width:10vw;
-    bottom:-3vw;
+    width:6vw;
+    bottom:42vw;
   }
   #left{
-    width:10vw;
-    bottom:-3vw;
+    width:6vw;
+    bottom:42vw;
   }
+
+  .gallery table, th, td
+  {
+  max-width: 200px;
+  border: none;
+  border-collapse: collapse;
+  padding: 3px 4px;
+  text-align: center;
+  overflow-x:auto;
+  }
+  
+  .gallery img
+  {
+    padding: 0vw;
+  width: 28.5vw;
+  }
+
+
+
+  
   footer{
     height:60vw;
   }
