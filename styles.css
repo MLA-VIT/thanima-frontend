@@ -419,7 +419,7 @@ footer img{
     width:80vw;
   }
   .about h1{
-    font-size:9vw;
+    font-size:12vw;
   }
   .about p{
     font-size: 4vw;
@@ -464,16 +464,21 @@ footer img{
     width:20vw;
     font-size: 3vw;
     height:8vw;
-    bottom:23.5vw;
+    bottom:20.5vw;
     margin-left:38vw;
   }
   #right{
     width:6vw;
     bottom:42vw;
+    right:-4vw;
   }
   #left{
     width:6vw;
     bottom:42vw;
+  }
+
+  .gallery1 h1{
+    font-size: 12vw;
   }
 
   .gallery table, th, td
@@ -492,8 +497,16 @@ footer img{
   width: 28.5vw;
   }
 
-
-
+  #button3{
+    width:22vw;
+    font-size: 3vw;
+    height:8vw;
+    
+    margin-left:38vw;
+  }
+.sponsors h1{
+  font-size:5vw;
+}
   
   footer{
     height:60vw;
@@ -516,7 +529,8 @@ footer img{
     width:4.4vw;
   }
   #mail{
-    width:5.5vw;
+    width:4.5vw;
+    height: 4.5vw;
   }
   .contact{
     top:25vw;
