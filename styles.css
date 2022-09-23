@@ -442,7 +442,7 @@ footer img{
   }
  
   .content{
-    bottom:56vw;
+    bottom:60vw;
     left:20vw;
     width:60vw;
     height:30vw;
@@ -471,12 +471,12 @@ footer img{
   }
   #right{
     width:6vw;
-    bottom:42vw;
+    bottom:48vw;
     right:-4vw;
   }
   #left{
     width:6vw;
-    bottom:42vw;
+    bottom:48vw;
   }
 
   .gallery1 h1{
