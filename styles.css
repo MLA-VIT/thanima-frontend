@@ -288,6 +288,7 @@ text-align: center;
 footer{
   height:30vw;
   position: relative;
+  text-align: center;
 }
 footer img{
   width:1vw;
@@ -338,11 +339,11 @@ footer img{
 }
 .bottom{
   font-family: poppins-l;
-  font-size: .4vw;
+  font-size: .8vw;
   position: absolute;
   bottom:0;
   color:red;
-  left:35vw;
+  width: 100%;
   text-align: center;
 
 }
@@ -547,7 +548,7 @@ footer img{
 
   }
   .bottom{
-    font-size: 1.3vw;
+    font-size: 1.55vw;
     left:17vw;
     width:60vw;
   }
